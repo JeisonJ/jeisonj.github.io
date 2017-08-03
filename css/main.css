@@ -58,7 +58,7 @@
 		color: ##DBDBDB;
 	}
 
-slider {
+.slider {
 	background-color:#444;
 	background: url(../img/Sasha.Grey.jpg);
 	background-position:  top center;  /*imagen se centra*/
