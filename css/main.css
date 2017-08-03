@@ -1,0 +1,69 @@
+
+.web-header {
+	width: 100%;
+	height:70px;
+	background-color:#303481;
+}
+
+.web-header--ancho {
+	width: 80%;   /* Ancho */
+	height:70px; /* Alto */
+	margin:auto;
+	/*background-color:yellow;*/
+
+}
+
+.web-header__contenedor__titulo {
+	width: 30%;
+	height:70px;
+	float: left;
+	/*background-color:blue;*/
+	/*padding-top:10px;*/
+	box-sizing:border-box; /* Forzando a que no se sobrepase del borde del conenedor */
+}
+
+.web-header__titulo {
+	color:#fff;
+	font-size:   	40px;
+	line-height: 	35px;
+	font-weight: 	bold;
+	text-decoration:none;
+}
+
+.web-header__nav {
+	width: 		70%;
+	height: 	70px;
+	float: 		left;
+	text-align: right;
+	line-height:35px;
+	box-sizing: border-box;
+	/*background-color:olive;*/
+}
+
+.nav__item {
+	display:inline;
+}
+
+.nav__item__link {
+	color:#fff;
+	font-size: 		 14px;
+	font-weight: 	 bold;
+	padding-left: 	 15px;
+	letter-spacing:  1px;
+	text-transform:  uppercase;
+	text-decoration: none;
+	font-family: monserrat;
+}
+	.nav__item__link:hover {
+		color: ##DBDBDB;
+	}
+
+slider {
+	background-color:#444;
+	background: url(../img/Sasha.Grey.jpg);
+	background-position:  top center;  /*imagen se centra*/
+	background-attachment:contain; /*se ubicara dentro del container*/
+	background-size: 	  cover;   /*se adaptara al tamano del contenedor*/
+	width: 100%;
+	height:500px;
+}

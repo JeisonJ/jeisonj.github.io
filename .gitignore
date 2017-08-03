@@ -1,0 +1,12 @@
+
+# Created by https://www.gitignore.io/api/prepros
+
+### Prepros ###
+# Config Prepros files to ignore
+prepros.cfg
+prepros-6.config
+
+# End of https://www.gitignore.io/api/prepros
+
+# Ignorar directorio donde guardo archivos por revisar
+OLD/*
