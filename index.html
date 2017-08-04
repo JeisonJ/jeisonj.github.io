@@ -10,6 +10,8 @@
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    
+    <script src="js/vendor/holder.js"></script>
   </head>
   <body>
     <header class="web-header">
@@ -30,26 +32,54 @@
     </header>
     
     <div class="slider">
+      <div class="slider__content">
+        <div class="ancho-letras">
+          <div class="letras-slider">
+            <h1 class="letras-slider__titulo">El mejor sitio web</h1>
+            <p class="letras-slider__parrafo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic, deleniti culpa quae veniam illo. Provident quos quam fugiat, perferendis.</p>
+          </div>
+        </div>
+      </div>
     </div>
     
     <main>
-      <section>
-        <h2>Que hago</h2>
+      <section class="que-hago">
+        <h2 class="que-hago__titulo">Lorem ipsum dolor sit amet.</h2>
+        <p class="que-hago__parrafo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eaque quos earum, labore ipsam iste! </p>
+        <div class="group-clients-logos"><img class="client-logo" data-src="holder.js/120x90" alt="">
+          <img class="client-logo" data-src="holder.js/120x90" alt="">
+          <img class="client-logo" data-src="holder.js/120x90" alt="">
+          <img class="client-logo" data-src="holder.js/120x90" alt="">
+          <img class="client-logo" data-src="holder.js/120x90" alt="">
+          
+        </div>
       </section>
-      <section>
-        <h2>Contactar</h2>
-        <button>Hola</button>
+      <section class="que-hago contactar">
+        <h2 class="que-hago__titulo">Contactar</h2>
+        <p class="que-hago__parrafo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eaque quos earum, labore ipsam iste! </p>
+        <button class="contactar__boton">Contactar</button>
       </section>
     </main>
     
-    <footer>
-      <section>
-        <p>arriba</p>
-      </section>
-      <section> 
-        <p>&copy; 2017 El super nombre</p>
-        <p>redes sociales</p>
-      </section>
+    <footer class="footer-bottom">
+      <div class="footer__content">
+        <div class="footer__content__up"><img src="img/arrow-top.svg" alt="top"></div>
+        <div class="footer__content__down">
+          <div class="footer__copy"> 
+            <p>&copy; 2017 El super nombre</p>
+          </div>
+          <div class="footer__social">
+            <ul class="footer__social-list">
+              <li class="footer__social__item"><a class="social__link" href="#">lorem</a></li>
+              <li class="footer__social__item"><a class="social__link" href="#">lorem</a></li>
+              <li class="footer__social__item"> <a class="social__link" href="#">lorem</a></li>
+              <li class="footer__social__item"> <a class="social__link" href="#">lorem</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
+    <script src="js/vendor/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

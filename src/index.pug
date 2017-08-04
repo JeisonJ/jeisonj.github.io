@@ -3,21 +3,61 @@ extends templates/template.pug
 //- Asignando contenido al header.
 block header 
 
+
 block slider
+	.slider__content
+		.ancho-letras
+			.letras-slider
+				h1.letras-slider__titulo El mejor sitio web
+				p.letras-slider__parrafo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic, deleniti culpa quae veniam illo. Provident quos quam fugiat, perferendis.
 
 //- Asignando contenido al main.
 block main
-	section
-		h2 Que hago
+	section.que-hago
+		h2.que-hago__titulo Lorem ipsum dolor sit amet.
+		p.que-hago__parrafo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eaque quos earum, labore ipsam iste! 
+		.group-clients-logos
+			img(data-src="holder.js/120x90", alt="").client-logo
+			|
+			|
+			img(data-src="holder.js/120x90", alt="").client-logo
+			|
+			|
+			img(data-src="holder.js/120x90", alt="").client-logo
+			|
+			|
+			img(data-src="holder.js/120x90", alt="").client-logo
+			|
+			|
+			img(data-src="holder.js/120x90", alt="").client-logo
+			|
+			|
 
-	section
-		h2 Contactar
-		button Hola
+	section.que-hago.contactar
+		h2.que-hago__titulo Contactar
+		p.que-hago__parrafo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eaque quos earum, labore ipsam iste! 
+
+		button.contactar__boton Contactar
 
 //- Asignando contenido al footer.
 block footer
-	section
-		p arriba
-	section 
-		p &copy; 2017 El super nombre
-		p redes sociales
+	.footer__content
+		.footer__content__up
+			img(src="img/arrow-top.svg", alt="top")
+		.footer__content__down
+			.footer__copy 
+				p &copy; 2017 El super nombre
+			.footer__social
+				ul.footer__social-list
+					li.footer__social__item
+						a(href="#").social__link lorem
+					li.footer__social__item
+						a(href="#").social__link lorem
+					li.footer__social__item 
+						a(href="#").social__link lorem
+					li.footer__social__item 
+						a(href="#").social__link lorem
+			
+		
+
+

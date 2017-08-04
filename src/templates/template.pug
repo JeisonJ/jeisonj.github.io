@@ -13,6 +13,10 @@ html(lang="es")
 		|
 		link(rel="stylesheet" href="css/normalize.css")
 		link(rel="stylesheet" href="css/main.css")
+		|
+		|
+		script(src="js/vendor/holder.js")
+
 	body
 		header.web-header
 			.web-header--ancho
@@ -40,7 +44,7 @@ html(lang="es")
 
 		div.slider
 			block slider
-				
+
 		|
 		|
 
@@ -49,5 +53,8 @@ html(lang="es")
 		
 		|
 		|
-		footer
+		footer.footer-bottom
 			block footer
+		
+		script(src="js/vendor/jquery-3.1.1.slim.min.js")
+		script(src="js/main.js")
