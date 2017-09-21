@@ -215,7 +215,7 @@ section:nth-child(even) {
 			margin: 0 auto;*/
 			padding-top: 1em;
 			padding-bottom: 2em;
-			padding-left: 3em;
+			padding-left: 1.5em;
 			font-size: 1.155em;
 			/*line-height: 1.5em;*/
 		}
@@ -227,11 +227,11 @@ section:nth-child(even) {
 			text-transform: none;
 		}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 768px) {
 
-		/*.services__inner {
-			padding-left: 3em;
-		}*/
+		.services article {
+			width: 80%;
+		}
 	}
 
 /* Tiles */
@@ -241,7 +241,7 @@ section:nth-child(even) {
 		flex-wrap: wrap;
 	}
 
-	.work article {
+	.work__img {
 		width: 40%;
 		height: 40vh;
 	    max-height: 40em;
@@ -249,43 +249,43 @@ section:nth-child(even) {
 	    border: 1px solid black;
 	}
 
-		.work article:nth-child(4n - 1), .work article:nth-child(4n - 2) {
+		.work__img:nth-child(4n - 1), .work__img:nth-child(4n - 2) {
 				width: 60%;
 			}
 
-			.work article:nth-child(6n - 5),
-			.advantages article:nth-child(6n - 5) {
+			.work__img:nth-child(6n - 5)/*,
+			.advantages article:nth-child(6n - 5)*/ {
 				background-color: #6fc3df;
 			}
 
-			.work article:nth-child(6n - 4),
-			.advantages article:nth-child(6n - 4) {
+			.work__img:nth-child(6n - 4)/*,
+			.advantages article:nth-child(6n - 4)*/ {
 				background-color: #8d82c4;
 			}
 
-			.work article:nth-child(6n - 3),
-			.advantages article:nth-child(6n - 3) {
+			.work__img:nth-child(6n - 3)/*,
+			.advantages article:nth-child(6n - 3)*/ {
 				background-color: #ec8d81;
 			}
 
-			.work article:nth-child(6n - 2),
-			.advantages article:nth-child(6n - 2) {
+			.work__img:nth-child(6n - 2)/*,
+			.advantages article:nth-child(6n - 2)*/ {
 				background-color: #e7b788;
 			}
 
-			.work article:nth-child(6n - 1),
-			.advantages article:nth-child(6n - 1) {
+			.work__img:nth-child(6n - 1)/*,
+			.advantages article:nth-child(6n - 1)*/ {
 				background-color: #8ea9e8;
 			}
 
-			.work article:nth-child(6n),
-			.advantages article:nth-child(6n) {
+			.work__img:nth-child(6n)/*,
+			.advantages article:nth-child(6n)*/ {
 				background-color: #87c5a4;
 			}
 
 	@media screen and (max-width: 1280px) {
 
-			.work article {
+			.work__img {
 				padding: 4em 3em 2em 3em ;
 				height: 30vh;
 				max-height: 30em;
@@ -296,7 +296,7 @@ section:nth-child(even) {
 
 		@media screen and (max-width: 980px) {
 
-			.work article {
+			.work__img {
 				width: 50% !important;
 			}
 
@@ -304,14 +304,14 @@ section:nth-child(even) {
 
 		@media screen and (max-width: 736px) {
 
-			.work article {
+			.work__img {
 				padding: 3em 1.5em 1em 1.5em ;
 				height: 16em;
 				max-height: none;
 				min-height: 0;
 			}
 
-				.work article h3 {
+				.work__img h3 {
 					font-size: 1.5em;
 				}
 
@@ -323,7 +323,7 @@ section:nth-child(even) {
 				display: block;
 			}
 
-				.work article {
+				.work__img {
 					height: 20em;
 					width: 100% !important;
 				}
@@ -391,12 +391,12 @@ section:nth-child(even) {
 		}
 
 		.advantages__card .box--two {
-			margin-left: 2em;
+			padding-left: 2em;
 		}
 
 		.advantages .box,
 		.advantages__title {
-			padding: 1em 6px 30px 3em;
+			padding: 1em 6px 30px 1.5em;
 		}
 
 		.advantages__title {
@@ -423,12 +423,19 @@ section:nth-child(even) {
 		.advantages__card {
 			width: 50%;
 		}
+		.advantages__title h2 {
+			font-size: 3em;
+		}
 	}
 
 	@media screen and (max-width: 480px) {
 
 		.advantages__card {
 			width: 100%;
+		}
+
+		.advantages__title h2 {
+			font-size: 2em;
 		}
 	}
 
@@ -690,9 +697,23 @@ section:nth-child(even) {
 			text-align: center;
 		}
 
+		.heart {
+			margin-left: .3em;
+			color: tomato;
+		}
+
 		.footer_icons {
 			justify-content: center;
+			font-size: 1.4em;
 			color: #fff;
+		}
+
+		.footer_icons li {
+			margin-right: .5em;
+		}
+
+		.footer_icons li:nth-child(5) {
+			margin-right: 0;
 		}
 
 
@@ -722,6 +743,10 @@ section:nth-child(even) {
 
 			.footer_copy:nth-child(3) {
 				order: 1;
+			}
+
+			.footer_icons {
+				padding-bottom: 1em;
 			}
 
 		}
