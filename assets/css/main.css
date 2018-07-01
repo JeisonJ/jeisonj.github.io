@@ -180,7 +180,7 @@ section:nth-child(even) {
 		font-family: 'Gilroy Light';
 		color: #fff;
 		background-color: #232526;
-		background-image: url('../img/131242065.jpg');
+		/* background-image: url('../img/131242065.jpg'); */
 		background-position: center 0px;
 		background-attachment: fixed;
 	    background-repeat: no-repeat;
